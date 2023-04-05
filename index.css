@@ -175,8 +175,9 @@ table {
 }
 .section2 {
   scroll-margin-top: 48px;
-  padding: 40px 20px;
+  padding: 40px 0px;
   display: block;
+  width: 1060px;
 }
 .section2_title {
   height: 30px;
@@ -221,17 +222,114 @@ table {
   cursor: pointer;
 }
 .section2_ul {
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 20px;
   width: 100%;
-  grid-gap: 24px 20px;
-  gap: 24px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
   margin: 0 auto;
+  list-style: none;
+}
+ul {
+  display: block;
+  list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
+}
+
+.section2_li {
+  width: 250px;
+  height: 150.77px;
+  box-sizing: border-box;
+}
+
+.section2_div1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1060px;
+  height: 50px;
+}
+.section2_Btn2 {
+  border-color: #e1e2e4 !important;
+  color: #171717 !important;
+  width: 345px;
+  margin: 0 auto;
+  height: 50px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #36f;
+  position: relative;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 25px;
+  justify-content: center;
+  vertical-align: middle;
+  min-width: 64px;
+  padding: 0 27px;
+  display: inline-flex;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.section3 {
+  max-width: 1060px;
+  margin: 0 auto 60px;
+  box-sizing: border-box;
+}
+.section3_div1 {
+  width: 1054px;
+  cursor: pointer;
+  background: #0d99ff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 28px 0 22px 120px;
+  background-image: url(https://static.wanted.co.kr/images/type-test/typetest-banner-image.png);
+  background-size: auto 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+.section3_div2 {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 26px;
+}
+div {
+  display: block;
+}
+.section3_div3 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.0056em;
+  height: 32px;
+}
+.section4 {
+  max-width: 1060px;
+  margin: 60px auto 0;
+  box-sizing: border-box;
+}
+.section4_div1 {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  background-image: linear-gradient(
+    90deg,
+    #01a9fe -12%,
+    #2f5fef 37%,
+    #046afe 72%,
+    #00d2dd 110%
+  );
+  padding: 21px 30px;
+  font-size: 17px;
+  border-radius: 38.5px;
+  line-height: normal;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
 }
