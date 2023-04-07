@@ -126,6 +126,7 @@ table {
 /* 시작 */
 #header {
   height: 50px;
+  z-index: 3;
 }
 #header_wrap {
   height: 50px;
@@ -172,7 +173,7 @@ table {
   margin-left: 50px;
 }
 hr {
-  color: #666;
+  border: 1px solid #e1e2e3;
 }
 .header_li {
   color: #333;
@@ -314,7 +315,7 @@ a:visited {
   margin-right: 300px;
 }
 .section1_Btn {
-  
+  border: 1px solid #e1e2e3;
   width: 30px;
   height: 60px;
   opacity: .5;
@@ -394,13 +395,20 @@ a:visited {
   display: flex;
   flex-direction: row;
   align-items: center;
-  overflow-x: scroll;
+  overflow: hidden;
   padding-bottom: 0.5px;
   grid-gap: 8px;
   gap: 8px;
   margin-top: 30px;
   width: 1012px;
 }
+.section2_Btn1 {
+  width: 2960px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    position: relative;
+}
+
 .section2_Btn {
   padding: 7px 12px;
   font-size: 14px;
