@@ -45,7 +45,7 @@
 
         <section class="section1">
             <div class="section1_div1">
-                 <div style="display: flex; flex-direction: row;">
+                 <div>
                     <span class="section1_span1">전체</span>
                     <button class="section1_Btn">
                         <i class="fa-solid fa-chevron-down fa-sm" style="color: #ababab;"></i>
@@ -135,8 +135,9 @@
 
             <ul class="section2_ul">
                 <li class="section2_li">
+                  <a href="employment_detail.html">
                   <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F8177%2Ffr3dtvmomfzj6gbr__400_400.jpeg&w=400&q=75"
-                  class="section2_img">
+                  class="section2_img"></a>
                   <div class="section2_div2">
                     <div class="section2_h2">해외 파트너십 마케팅</div>
                     <div class="section2_p1">스와치온(SwatchOn)</div>
@@ -276,8 +277,8 @@
           </div>
 
         <section class="section2">
-            <ul class="section2_ul">
-                <li class="section2_li">
+            <ul class="section2_ul" id="section2_ul">
+                <li class="section2_li" id="section2_li">
                   <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F8177%2Ffr3dtvmomfzj6gbr__400_400.jpeg&w=400&q=75"
                   class="section2_img">
                   <div class="section2_div2">
@@ -486,5 +487,16 @@
       </div>
       </div>
     </footer>
+
+
+    <script>
+        const section2_ul = document.getElementById('section2_ul');
+        const section_li = document.getElementById('section2_li');
+
+        for(let i = 0; i<10; i++) {
+          const newItem = section_li.cloneNode(true);
+          section2_ul.appendChild(newItem);
+        }
+    </script>
 </body>
 </html>
