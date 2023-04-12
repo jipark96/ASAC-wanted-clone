@@ -9,3 +9,17 @@ signupButton.onclick = () => {
 closeBtn.onclick =  () => {
   signupModal.style.display = "none"; // 모달 닫기
 };
+
+const goModal2 = document.getElementById("go_modal2");
+const signupModal2 = document.getElementById("signup_modal2");
+const closeBtn2 = document.getElementsByClassName("close2")[0];
+
+goModal2.onclick = () => {
+    signupModal.style.display = "none"; // 첫번째 모달 닫기
+  signupModal2.style.display = "block"; // 두번째 모달 열기
+};
+
+closeBtn2.onclick = () => {
+    signupModal2.style.display = "none"; // 두번째 모달 닫기
+    signupModal.style.display = "block"; // 첫번째 모달 열기
+};

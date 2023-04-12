@@ -942,7 +942,7 @@ margin-top: 60px;
   color: #888;
   font-size: 15px;
 }
-.modal_email {
+.modal_input {
   width: 95%;
   height: 50px;
   min-height: 50px;
@@ -959,7 +959,6 @@ margin-top: 60px;
   color: #aaa;
   background-color: #e1e2e3;
   border: none;
-  cursor: default;
   width: 100%;
   height: 50px;
   min-height: 50px;
@@ -1094,9 +1093,133 @@ margin-top: 60px;
     background: none;
     z-index: 1;
     color: #333;
+    border: #aaa;
 }
 .modal_div10 {
   right: 13px;
   position: absolute;
   margin-top: 10px;
+}
+
+.close2 {
+  color: #aaaaaa;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal2_div1 {
+  margin: 30px 0px 7px;
+}
+.modal2_span {
+  text-align: left;
+  color: #888;
+  font-size: 15px;
+  font-weight: 600;
+}
+.modal2_div2 {
+  height: 50px;
+  min-height: 50px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+}
+.modal2_select {
+  padding-left: 12px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #171717;
+  font-weight: 400;
+}
+.modal2_div3 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.modal2_input {
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  padding: 0px 12px;
+  border: 1px solid #aaa;
+  color: #171717;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.modal2_button1 {
+  border: 1px solid #e1e2e3;
+  color: #aaa;
+  cursor: default;
+  height: 50px;
+    min-height: 50px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 0px 15px;
+    width: auto;
+    flex: 0 0 auto;
+    border-radius: 5px;
+  margin-left: 10px;
+}
+.modal_input2 {
+  color: #aaa;
+  background-color: #ececec;
+  opacity: 1;
+  width: 95%;
+  height: 50px;
+  min-height: 50px;
+  padding: 0px 12px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+
+}
+.modal2_div4 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.modal2_p {
+  text-align: left;
+  color: #888;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.modal2_div5 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-height: 25px;
+  width: 100%;
+  margin: 25px 0px 10px;
+  gap: 5px;
+}
+
+.modal2_checkbox {
+  position: absolute;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+.modal2_span3 {
+  font-size: 15px;
+  color: #171717;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-top: 5px;
 }
