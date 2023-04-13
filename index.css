@@ -125,12 +125,17 @@ table {
 
 /* 시작 */
 #header {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
   height: 50px;
   z-index: 3;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 #header_wrap {
   height: 50px;
-  width: 1060px;
+  max-width: 1060px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -239,10 +244,11 @@ a:visited {
   margin-top: 12px;
 }
 .section1 {
+  position: relative;
   outline: none;
   width: 1060px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 80px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -955,6 +961,18 @@ footer {
   font-size: 400;
   margin-top: 10px;
 }
+.modal_input:focus {
+  border: 1px solid #36f;
+}
+.modal_email_error {
+  display: none;
+  color: #fe415c;
+  font-size: 13px;
+  text-align: left;
+  font-weight: 400;
+  margin-top: 3px;
+}
+
 .modal_button {
   color: #aaa;
   background-color: #e1e2e3;
@@ -966,6 +984,10 @@ footer {
   font-size: 16px;
   margin-bottom: 10px;
   margin-top: 30px;
+}
+.modal_button.active {
+  background-color: #36f;
+  color: #fff
 }
 .modal_span2 {
   color: #aaa;
@@ -1141,6 +1163,7 @@ footer {
   color: #171717;
   font-weight: 400;
 }
+
 .modal2_div3 {
   display: flex;
   flex-direction: row;
@@ -1157,6 +1180,11 @@ footer {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 8px;
+}
+.modal2_input:focus,
+.modal2_input:active {
+border: 1px solid #36f;
+outline: none;
 }
 .modal2_button1 {
   border: 1px solid #e1e2e3;
@@ -1186,6 +1214,10 @@ footer {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 8px;
+}
+
+.modal_input2:focus {
+  border: 1px solid #36f;
 }
 .modal2_div4 {
   display: flex;

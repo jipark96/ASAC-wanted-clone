@@ -247,6 +247,7 @@ a:visited {
 .sectionDiv1 {
   width: 700px;
   vertical-align: top;
+  margin-top: -320px;
 }
 .section1Div2 {
   position: relative;
@@ -555,12 +556,14 @@ a:visited {
 .section6Button {
   display: flex;
   cursor: pointer;
+  top: 70px;
 }
 .aside {
-  bottom: 0px;
-  position: absolute;
-  right: 0px;
+  bottom:20px;
+  position: sticky;
   width: 340px;
+  top: 0;
+  margin-left: 720px;
 }
 .asideHeader {
   width: 340px;

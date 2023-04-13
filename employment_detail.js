@@ -5,3 +5,10 @@ const section7Li = document.getElementById('section7Li');
           const newItem = section7Li.cloneNode(true);
           section7Ul.appendChild(newItem);
         }
+const aside = document.querySelector(".aside");
+const offsetTop = aside.offsetTop; // aside 시작 위치
+window.onscroll = () => {
+  if(window.pageYOffset >= offsetTop) {
+    
+  }
+}
