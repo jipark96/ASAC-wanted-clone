@@ -902,6 +902,8 @@ footer {
   border: 1px solid #888;
   width: 80%;
   max-width: 400px;
+  height: 600px;
+  overflow-y: auto;
   position: relative;
 }
 .close {
@@ -987,7 +989,7 @@ footer {
 }
 .modal_button.active {
   background-color: #36f;
-  color: #fff
+  color: #fff;
 }
 .modal_span2 {
   color: #aaa;
@@ -1183,8 +1185,8 @@ footer {
 }
 .modal2_input:focus,
 .modal2_input:active {
-border: 1px solid #36f;
-outline: none;
+  border: 1px solid #36f;
+  outline: none;
 }
 .modal2_button1 {
   border: 1px solid #e1e2e3;
@@ -1337,71 +1339,6 @@ outline: none;
   text-align: left;
   color: #aaa;
 }
-
-.a {
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  width: 1060px;
-  height: 300px;
-  margin: 60px 0 25px 0;
-  position: relative;
-  align-items: center;
-}
-.b {
-  display: flex;
-  width: 1060px;
-  gap: 25px;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-}
-.c {
-  display: flex;
-  z-index: 1;
-}
-.d {
-  border-radius: 5px;
-  width: 1060px;
-  height: 300px;
-}
-.e {
-  display: flex;
-  position: absolute;
-  background-color: white;
-  width: 330px;
-  height: 145px;
-  border-radius: 4px;
-  margin: 130px 40px 0px 23px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
-}
-.f {
-  display: flex;
-  width: 290px;
-  gap: 10px;
-  flex-direction: column; 
-  align-items: flex-start;
-  padding: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-.g {
-  font-size: 20px;
-  font-weight: 650;
-  text-align: start;
-}
-.h {
-  font-size: 15px;
-}
-.i {
-  display: flex;
-    margin-left: 20px;
-}
-
-
-
 .section1 {
   display: flex;
   width: 1060px;
@@ -1417,6 +1354,7 @@ outline: none;
   width: 1060px;
   gap: 25px;
   margin: 0 auto;
+  position: relative;
 }
 
 .section1_div1 {
@@ -1429,8 +1367,9 @@ outline: none;
   position: absolute;
   justify-content: center;
   border-radius: 30px;
-  opacity: .5;
+  opacity: 0.5;
   left: -75px;
+  cursor: pointer;
 }
 .section1_div2 {
   display: flex;
@@ -1442,8 +1381,9 @@ outline: none;
   position: absolute;
   justify-content: center;
   border-radius: 30px;
-  opacity: .5;
+  opacity: 0.5;
   right: -70px;
+  cursor: pointer;
 }
 .section1_svg {
   width: 16px;
@@ -1479,10 +1419,10 @@ outline: none;
   display: flex;
   width: 290px;
   gap: 10px;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   padding: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .section1_p1 {
@@ -1491,7 +1431,7 @@ outline: none;
   text-align: start;
 }
 
-.section1_p2{
+.section1_p2 {
   font-size: 15px;
 }
 
