@@ -125,8 +125,13 @@ table {
 
 /* 시작 */
 #header {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
   height: 50px;
   z-index: 3;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 #header_wrap {
   height: 50px;
@@ -242,7 +247,8 @@ a:visited {
   margin: 0 auto;
   max-width: 1060px;
   width: 88%;
-  padding: 30px;
+  padding: 80px 30px 30px 30px;
+
 }
 .sectionDiv1 {
   width: 700px;
