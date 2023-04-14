@@ -34,13 +34,191 @@
             <div class="header_li2">
               <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
             </div>
-            <div class="header_li3">회원가입/로그인</div>
+            <div class="header_li3" id="signup_button">회원가입/로그인</div>
             <div class="header_li4"></div>
             <div class="header_li5">기업 서비스</div>
           </span>
         </div>
       </header>
     
+      <div class="modal" id="signup_modal">
+        <div class="modal_content">
+          <span class="close" id="close">&times;</span>
+          <h1 class="modal_h1">wanted</h1>
+          <form>
+            <div class="modal_div1">
+            <h2 class="modal_h2">직장인을 위한</h2>
+            <h2 class="modal_h2">커리어 플랫폼, 원티드!</h2>
+            <p class="modal_p" style="margin-top: 20px;">커리어 성장과 행복을 위한 여정</p>
+            <p class="modal_p">지금 원티드에서 시작하세요.</p>
+          </div>
+          <div class="modal_div2">
+            <span class="modal_span">이메일</span>
+          </div>
+          <input type="email" id="email_input" class="modal_input" placeholder="이메일을 입력해주세요.">
+          <p id="email_error" class="modal_email_error">유효한 이메일 주소를 입력하세요.</p>
+          <button type="button" class="modal_button" id="go_modal2">
+            <span class="modal_span2">이메일로 계속하기</span>
+          </button>
+          
+          <div class="modal_div3">또는</div>
+          <div class="modal_div4">
+            <button class="modal_button1">
+              <span>
+                <img src="img/apple.png" class="modal_img">
+              </span>
+              <p class="modal_p1">Apple</p>
+            </button>
+            <button class="modal_button1">
+              <span>
+                <img src="img/facebook.png" class="modal_img">
+              </span>
+              <p class="modal_p1">Facebook</p>
+            </button>
+            <button class="modal_button1">
+              <span>
+                <img src="img/google.png" class="modal_img">
+              </span>
+              <p class="modal_p1">Google</p>
+            </button>
+            <button class="modal_button1">
+              <span>
+                <img src="img/kakao.png" class="modal_img">
+              </span>
+              <p class="modal_p1">Kakao</p>
+            </button>
+          </div>
+          <div class="modal_div5">
+            <p class="modal_p2">계정을 잊으셨나요? ></p>
+          </div>
+          <hr style="margin-top: 30px;">
+          <div class="modal_div6">
+            <p class="modal_p3">이용약관</p>
+            <p class="modal_p4">개인정보처리방침</p>
+          </div>
+          <p class="modal_p5">© Wantedlab, Inc.</p>
+          <div class="modal_div7">
+            <div class="modal_div8">
+              <img src="https://static.wanted.co.kr/images/wantedoneid/ico_KR.svg"
+              class="modal_img1">
+              <div class="modal_div9">
+                <select class="modal_selct">
+                  <option value="Ko" selected>한국</option>
+                  <option value="En">English</option>
+                  <option value="Ja">日本語</option>
+                </select>
+                <div class="modal_div10">
+                  <i class="fa-solid fa-angle-down fa-sm" style="color: #171717;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="modal" id="signup_modal2">
+        <div class="modal_content">
+          <span class="close2" id="close2">&times;</span>
+          <h1 class="modal_h1">회원가입</h1>
+          <form>
+            <div class="modal2_div1">
+              <span class="modal2_span">이메일</span>
+            </div>
+            <input type="text" class="modal_input2" placeholder="abc@gmail.com" disabled>
+            <div class="modal2_div1">
+              <span class="modal2_span">이름</span>
+            </div>
+            <input type="text" class="modal_input" placeholder="이름을 입력해 주세요">
+            <div class="modal2_div1">
+              <span class="modal2_span">휴대폰 번호</span>
+            </div>
+            <div>
+              <div class="modal2_div2">
+                <select class="modal2_select">
+                  <option selected>South Korea +82</option>
+                  <option>Japan +81</option>
+                  <option>Taiwan +886</option>
+                  <option>Hong Kong +852</option>
+                  <option>Singapore +65</option>
+                  <option>Afghanistan +93</option>
+                </select>
+              </div>
+              <div class="modal2_div3">
+                <input type="text" class="modal2_input" placeholder="(예시)01012345678">
+                <button class="modal2_button1">
+                  <span class="modal2_span2">인증번호 받기</span>
+                </button>
+                </div>
+                <div class="modal2_div4">
+                  <input type="text" class="modal_input2" placeholder="인증번호를 입력해주세요.">
+                </div>
+            </div>
+            <div class="modal2_div1">
+              <span class="modal2_span">비밀번호</span>
+            </div>
+            <input type="password" class="modal_input" placeholder="비밀번호를 입력해주세요.">
+            <input type="password" class="modal_input" placeholder="비밀번호를 다시 한번 입력해주세요.">
+            <div style="margin-top: 5px;">
+              <p class="modal2_p">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
+            </div>
+            <div class="modal2_div5">
+                <input type="checkbox" class="modal2_checkbox" id="modal2_chk_all">
+                <span class="modal2_span3">전체 동의</span>
+            </div>
+            <hr>
+            <div class="modal2_div6">
+              <input type="checkbox" class="modal2_checkbox">
+              <span class="modal2_span4">만 14세 이상입니다. (필수)</span>
+          </div>
+          <div class="modal2_div6">
+            <input type="checkbox" class="modal2_checkbox">
+            <span class="modal2_span4">원티드 이용약관 동의 (필수)</span>
+            <span class="modal2_span5">자세히</span>
+        </div>
+        <div class="modal2_div6">
+          <input type="checkbox" class="modal2_checkbox">
+          <span class="modal2_span4">원티드 개인정보 수집 및 이용 동의 (필수)</span>
+          <span class="modal2_span6">자세히</span>
+      </div>
+      <div class="modal2_div6">
+        <input type="checkbox" class="modal2_checkbox" id="modal2_chk">
+        <span class="modal2_span4">채용 소식. 커리어 콘텐츠, 이벤트 등 원티드 맞춤 정보 받기</span>
+    </div>
+            <div class="modal2_div7">
+              <label for="modal2_chk" class="modal2_label">
+                <input type="checkbox" class="modal2_checkbox2">
+                <span class="modal2_span7">
+                  <i class="fa-solid fa-check fa-sm" style="color: #888888; margin-right: 7px;"></i>
+                </span>
+                <p class="modal2_p1">이메일</p>
+              </label>
+              <label for="modal2_chk" class="modal2_label">
+                <input type="checkbox" class="modal2_checkbox2">
+                <span class="modal2_span7">
+                  <i class="fa-solid fa-check fa-sm" style="color: #888888; margin-right: 7px;"></i>
+                </span>
+                <p class="modal2_p1">앱 푸시</p>
+              </label>
+              <label for="modal2_chk" class="modal2_label">
+                <input type="checkbox" class="modal2_checkbox2">
+                <span class="modal2_span7">
+                  <i class="fa-solid fa-check fa-sm" style="color: #888888; margin-right: 7px;"></i>
+                </span>
+                <p class="modal2_p1">문자 메시지</p>
+              </label>
+            </div>
+            <div class="modal2_div8">
+              <div class="modal2_div9"></div>
+              <button type="submit" class="modal2_button2" disabled>
+                <span class="modal2_span8">가입하기</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
       <div id="main">
         <section class="section1">
         
@@ -383,7 +561,7 @@
                     <span class="section4Span2">서울시 성동구 성수동 2가 277-47, 무신사 캠퍼스 N1</span>
                 </div>
                 <a class="section4A" href="https://map.naver.com/v5/?c=17,0,0,0,dh&lng=127.0606163&lat=37.5444685&type=0&title=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%B1%EB%8F%99%EA%B5%AC%20%EC%95%84%EC%B0%A8%EC%82%B0%EB%A1%9C13%EA%B8%B8%2011">
-                    <img src="wanted2.png" class="section4Img">
+                    <img src="img/wanted2.png" class="section4Img">
                 </a>
             </div>
 

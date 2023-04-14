@@ -1,16 +1,10 @@
-const section7Ul = document.getElementById("section7Ul");
-const section7Li = document.getElementById("section7Li");
+const section2_ul = document.getElementById("section2_ul");
+const section_li = document.getElementById("section2_li");
 
-for (let i = 0; i < 28; i++) {
-  const newItem = section7Li.cloneNode(true);
-  section7Ul.appendChild(newItem);
+for (let i = 0; i < 10; i++) {
+  const newItem = section_li.cloneNode(true);
+  section2_ul.appendChild(newItem);
 }
-const aside = document.querySelector(".aside");
-const offsetTop = aside.offsetTop; // aside 시작 위치
-window.onscroll = () => {
-  if (window.pageYOffset >= offsetTop) {
-  }
-};
 
 const signupButton = document.getElementById("signup_button");
 const signupModal = document.getElementById("signup_modal");
