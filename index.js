@@ -37,10 +37,12 @@ emailInput.oninput = () => {
     emailInput.style.border = "1px solid #36f";
     emailError.style.display = "none";
     emailBtn.classList.add("active");
+    emailBtn.disabled = false;
   } else {
     emailInput.style.border = "1px solid red";
     emailError.style.display = "block";
     emailBtn.classList.remove("active");
+    emailBtn.disabled = true;
   }
 };
 
