@@ -56,8 +56,43 @@ modal2_chk_all.onchange = () => {
   });
 };
 
-//[메인페이지 사진 슬라이드]
+//이메일, 앱 푸시, 문자 메시지 클릭시 색 바꿔주기
+const modal2Chk = document.getElementById("modal2_chk");
+// const modal2Chk2 = document.getElementById("modal2_chk2");
+// const modal2Chk3 = document.getElementById("modal2_chk3");
+const modal2Icon1 = document.getElementById("modal2_icon1");
+// const modal2Icon2 = document.getElementById("modal2_icon2");
+// const modal2Icon3 = document.getElementById("modal2_icon3");
 
+let chkCounter1 = 1;
+// let chkCounter2 = 1;
+// let chkCounter3 = 1;
+//홀수번 버튼 체크 파란색, 짝수번 회색
+modal2Chk.onclick = () => {
+  if (chkCounter1 % 2 === 0) {
+    modal2Icon1.style.color = "#888888";
+  } else {
+    modal2Icon1.style.color = "#36f";
+  }
+  chkCounter1++;
+};
+// modal2Chk2.onclick = () => {
+//   if (chkCounter2 % 2 === 0) {
+//     modal2Icon2.style.color = "#888888";
+//   } else {
+//     modal2Icon2.style.color = "#36f";
+//   }
+//   chkCounter2++;
+// };
+// modal2Chk3.onclick = () => {
+//   if (chkCounter3 % 2 === 0) {
+//     modal2Icon3.style.color = "#888888";
+//   } else {
+//     modal2Icon3.style.color = "#36f";
+//   }
+//   chkCounter3++;
+// };
+//[메인페이지 사진 슬라이드]
 // 이전 이벤트 버튼과 다음 이벤트 버튼을 클래스를 이용해 선택
 const prevEventBtn = document.querySelector(".section1_div1");
 const nextEventBtn = document.querySelector(".section1_div2");
