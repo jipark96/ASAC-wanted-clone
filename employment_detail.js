@@ -67,3 +67,18 @@ modal2_chk_all.onchange = () => {
     checkbox.checked = modal2_chk_all.checked;
   });
 };
+
+//이메일, 앱 푸시, 문자 메시지 클릭시 색 바꿔주기
+const modal2Chk = document.getElementById("modal2_chk");
+const modal2Icon1 = document.getElementById("modal2_icon1");
+
+let chkCounter1 = 1;
+
+modal2Chk.onclick = () => {
+  if (chkCounter1 % 2 === 0) {
+    modal2Icon1.style.color = "#888888";
+  } else {
+    modal2Icon1.style.color = "#36f";
+  }
+  chkCounter1++;
+};
