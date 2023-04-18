@@ -69,12 +69,12 @@ let chkCounter1 = 1;
 // let chkCounter3 = 1;
 //홀수번 버튼 체크 파란색, 짝수번 회색
 modal2Chk.onclick = () => {
-  if (chkCounter1 % 2 === 0) {
+  if (!modal2Chk.getAttribute("checked")) {
     modal2Icon1.style.color = "#888888";
   } else {
     modal2Icon1.style.color = "#36f";
   }
-  chkCounter1++;
+
 };
 // modal2Chk2.onclick = () => {
 //   if (chkCounter2 % 2 === 0) {
